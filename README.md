@@ -12,10 +12,10 @@
 
 ### `package.json`
 
-   "scripts": {
-        "start": "webpack --mode development",
-        "build": "webpack --mode production"
-    }
+"scripts": {
+"start": "webpack --mode development",
+"build": "webpack --mode production"
+}
 
 4. now we can run `npm run start`, you should notice there is now `dist` folder auto-generated and there is inside `main.js`
 
@@ -37,12 +37,13 @@
 
 6. now lets run `npm i --save-dev webpack-dev-server`
 7. now add in `webpack.config.js` devServer info
+
 ### `webpack devServer option`
 
-   devServer: {
-        port: 3000,
-        contentBase: path.resolve(\_\_dirname, 'build')
-   }
+devServer: {
+port: 3000,
+contentBase: path.resolve(\_\_dirname, 'build')
+}
 
 ### `webpack.config.js` file should be like this at this stage
 
@@ -82,17 +83,18 @@
 
 1. `npm i --save-dev babel-core babel-loader@7 babel-preset-env`, there may be version issues so read the errors and install again required version
 2. config `module` in babel in `webpack.config.js` add below option:
+
 ### `babel config module`
 
-   module: {
-    rules: [
-        {
-            test: /\.js\$/,
-            exclude: /node_modules/,
-            use: ['babel-loader']
-        }
-    ]
-   }
+module: {
+rules: [
+{
+test: /\.js\$/,
+exclude: /node_modules/,
+use: ['babel-loader']
+}
+]
+}
 
 ### `webpack.config.js` file should be like this at this stage
 
