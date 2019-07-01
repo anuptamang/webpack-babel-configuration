@@ -40,8 +40,7 @@
 ### `webpack devServer option`
 
             devServer: {
-                port: 3000,
-                contentBase: path.resolve(\_\_dirname, 'build')
+                contentBase: path.resolve(__dirname, 'build')
             }
 
 ### `webpack.config.js` file should be like this at this stage
@@ -55,7 +54,6 @@
             filename: 'bundle.js'
         },
         devServer: {
-            port: 3000,
             contentBase: path.resolve(__dirname, 'build')
         }
     };
@@ -105,7 +103,6 @@
             filename: 'bundle.js'
         },
         devServer: {
-            port: 3000,
             contentBase: path.resolve(__dirname, 'build')
         },
 
